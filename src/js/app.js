@@ -14,7 +14,7 @@ advApp.config(['$routeProvider', function($routeProvider){
     when("/signup",{
         templateUrl: '../html/partials/signup.html',
     }).
-    when("/productdesc",{
+    when("/productDesc",{
         templateUrl: '../html/partials/singleProduct.html',
     }).
     when("/submitAd",{

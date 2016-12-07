@@ -4,6 +4,10 @@
 var app = angular.module('advApp')
 
 app.controller('productController', ['$scope', function($scope) {
-    $scope.productdesc = function() {
+    $scope.productDesc = function() {
     }
+/*
+    $scope.itemClicked = function(id){
+        console.log('data clicked = ', id);
+    }*/
 }]);
