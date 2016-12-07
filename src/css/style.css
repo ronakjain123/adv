@@ -1,0 +1,189 @@
+html, body{
+    margin:0;
+    padding:0;
+    background: #f8f6f6;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+}
+.clear{
+    clear: both;
+}
+.right{
+    float: right;
+}
+.container{
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+header{
+    margin:0 auto;
+    padding: 0;
+    width:100%;
+    height:100px;
+    background: url(/images/topnavbg.png) center top #000;
+    border-top: #00a970 solid 3px;
+}
+.header-box{
+    margin:0 auto;
+    width: 70%;
+}
+.header-box span.login{
+    margin-top: 30px;
+    float: right;
+}
+.header-box a{
+    color: #fff;
+    font-size:16px;
+    text-decoration: none;
+}
+.header-box a:hover{
+    color: #00a970;}
+.header-box .button{
+    padding:5px;
+    width:100px;
+    height:30px;
+    background: #00a970;
+    color: #fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    line-height:30px;
+    border:none;}
+.header-box .button:hover{
+    color: #00a970;
+background: #fff;}
+footer{
+    background: darkgrey;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top:20px;
+}
+
+/*Product List */
+.product{
+    margin:20px auto 0 auto;
+    padding:10px;
+    width:70%;
+    height:100px;
+    border:1px solid darkgray;
+}
+.product .image{
+    margin:0;
+    padding:0;
+    float: left;
+    width: 100px;
+    height:100px;
+}
+.product .content{
+    color: #000;
+    font-size:14px;
+    width: 85%;
+    float: right;
+    padding:10px;
+}
+.product .content .top{
+    margin-top:10px;
+    width:95%;
+}
+.product .content .top .heading{
+    color: darkblue;
+    font-size:15px;
+    float: left;
+    text-decoration: none;
+}
+.product .content .top .price{
+    color: #000;
+    font-size:15px;
+    float: right;
+}
+.product .content .bottom{
+    margin-top:10px;
+    width:50%;
+}
+.product .content .bottom .date{
+    color: #000;
+    font-size:14px;
+    float: left;
+}
+.product .content .bottom .by{
+    color: #000;
+    font-size:14px;
+    float: right;
+}
+
+/*Single product*/
+.prod{
+    margin:20px auto 0 auto;
+    padding:10px;
+    width:70%;
+    height:250px;
+    border:1px solid darkgray;
+}
+.prod .slider{
+    float: left;
+    width:300px;
+    height:250px;
+}
+.prod .desc{
+    float: right;
+    margin:0;
+    padding:15px;
+    height:auto;
+    width:65%;
+    color: #000;
+    font-size:14px;
+}
+.prod .desc .heading{margin-top:10px;
+    line-height:30px;}
+.prod .desc .price{
+    margin-top:10px;line-height:30px;}
+.prod .desc .date{margin-top:10px;line-height:30px;}
+.prod .desc .by{margin-top:10px;line-height:30px;}
+
+/*Login page*/
+.lg{
+    margin:20px auto;
+    padding:10px;
+    border:1px solid darkgray;
+    width: 70%;
+    height:auto;
+    font-size:16px;
+}
+.lg button{
+    width:100px;
+    height:30px;
+    background: #00a970;
+    color: #fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    line-height:30px;
+    border:none;
+}
+
+/*signup page*/
+.signup{
+    margin:20px auto;
+    padding:10px;
+    border:1px solid darkgray;
+    width: 70%;
+    height:auto;
+    font-size:16px;
+}
+.signup button{
+    width:100px;
+    height:30px;
+    background: #00a970;
+    color: #fff;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    line-height:30px;
+    border:none;
+}
+.signup span{
+    line-height:40px;}
+.signup .signup-box{margin: 0 auto;
+    width:50%;}

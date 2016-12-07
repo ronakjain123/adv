@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advertisement Project</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body ng-app="advApp">
+    <div class="container">
+        <header>
+            <div class="header-box">
+                <a href="/#/home"><img src="images/logo.png" alt=""></a>
+
+                <span class="login">
+                <a href="/#/home" class="button">Home</a>
+                <a href="/#/submitad" class="button">Submit Ad</a>
+                    <a href="/#/login">Login</a>
+                    <a href="/#/signup"> | Sign Up</a>
+                </span>
+            </div><!--End of header-box-->
+        </header><!--End of header-->
+        <div class="clear"></div>
+
+        <div ng-view></div>
+
+        <footer>
+            <span>© 2016 Xoriant Corporation. All Rights Reserved.</span>
+            <span> | Terms of Use</span>
+            <span> | Privacy Statements</span>
+            <span> | Sitemap</span>
+        </footer><!--End of footer-->
+    </div><!--end of container-->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
