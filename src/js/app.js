@@ -17,8 +17,11 @@ advApp.config(['$routeProvider', function($routeProvider){
     when("/productdesc",{
         templateUrl: '../html/partials/singleProduct.html',
     }).
-    when("/submitad",{
-        templateUrl: '../html/partials/submitad.html',
+    when("/submitAd",{
+        templateUrl: '../html/partials/submitAd.html',
+    }).
+    when("/editAd",{
+        templateUrl: '../html/partials/editAd.html',
     }).
     otherwise({
         redirectTo: '/home'

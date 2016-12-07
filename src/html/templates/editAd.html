@@ -1,20 +1,22 @@
-<!--submit Ad Page-->
+<!--edit Ad Page-->
 
 <div class="signup">
     <div class="signup-box">
-        <label>Title*</label><input type="text" name="title" value=""><div class="clear"></div>
-        <label>Name*</label><input type="text" name="name" value=""><div class="clear"></div>
-        <label>Category*</label>
+        <form>
+            <label>Title*</label><input type="text" name="title" value="" ><div class="clear"></div>
+            <label>Name*</label><input type="text" name="name" value="" ><div class="clear"></div>
+            <label>Category*</label>
+            <select name="category">
+                <option value="furniture">Furniture</option>
+                <option value="cars" selected>Cars</option>
+                <option value="mobile">Mobile</option>
+            </select>
 
-        <select name="category">
-            <option value="furniture">Furniture</option>
-            <option value="cars" selected>Cars</option>
-            <option value="mobile">Mobile</option>
-        </select>
-
-        <div class="clear"></div>
-        <label>Description</label><textarea rows="5" cols="20"></textarea><div class="clear"></div>
-        <label>Photos</label><input type="file" name="image"> <div class="clear"></div>
-        <button type="submit" value="submit" name="submit" ng-click="submit();">Submit</button>
-        <button type="button" value="Cancel" name="cancel">Cancel</button></div>
+            <div class="clear"></div>
+            <label>Description</label><textarea rows="5" cols="20"></textarea><div class="clear"></div>
+            <label>Uploading Multiple Images </label><input type="file" name="image"> <div class="clear"></div>
+            <button type="submit" value="submit" name="submit" ng-click="editAd();">Submit</button>
+            <button type="button" value="Cancel" name="cancel">Cancel</button>
+        </form>
+    </div>
 </div><!--End of signup-->

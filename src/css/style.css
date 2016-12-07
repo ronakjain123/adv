@@ -186,4 +186,6 @@ footer{
 .signup span{
     line-height:40px;}
 .signup .signup-box{margin: 0 auto;
-    width:50%;}
+    width:50%;
+    line-height:35px;
+}

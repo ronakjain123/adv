@@ -7,6 +7,6 @@ angular.module("advApp")
         return {
             restrict: 'E',
             scope : "=",
-            templateUrl: '../../html/templates/submitad.html',
+            templateUrl: '../../html/templates/submitAd.html',
         };
     });

@@ -14,19 +14,39 @@ angular.module("advApp")
                         "id": "1",
                         "name": "Mac Book Pro",
                         "price": "2,30,000",
-                        "postDate": "21/11/2016",
-                        "postBy": "john Deo"
+                        "date": "2/11/2016",
+                        "by": "John Deo"
                     },
                     {
                         "id": "2",
+                        "name": "Lenovo Desktop",
+                        "price": "7,000",
+                        "date": "21/11/2016",
+                        "by": "Messi"
+                    },
+                    {
+                        "id": "3",
                         "name": "Mac Book Pro",
                         "price": "2,30,000",
-                        "postDate": "21/11/2016",
-                        "postBy": "john Deo"
+                        "date": "21/11/2016",
+                        "by": "Ronaldo"
+                    },
+                    {
+                        "id": "4",
+                        "name": "Motorola G4",
+                        "price": "13,000",
+                        "date": "11/11/2016",
+                        "by": "Jack"
+                    },
+                    {
+                        "id": "5",
+                        "name": "Maruti swift",
+                        "price": "6,30,000",
+                        "date": "11/11/2016",
+                        "by": "John Deo"
                     }
-                ];
 
-                console.log('function link : ', scope.productList);
+                ];
             }
         };
     });

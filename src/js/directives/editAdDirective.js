@@ -3,10 +3,10 @@
  */
 'use strict';
 angular.module("advApp")
-    .directive('submitAd', function () {
+    .directive('editAd', function () {
         return {
             restrict: 'E',
             scope : "=",
-            templateUrl: '../../html/templates/submitAd.html',
+            templateUrl: '../../html/templates/editAd.html',
         };
     });
