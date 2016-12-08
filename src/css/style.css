@@ -161,6 +161,7 @@ footer{
     border-radius:5px;
     line-height:30px;
     border:none;
+    outline:none;
 }
 
 /*signup page*/
@@ -182,6 +183,7 @@ footer{
     border-radius:5px;
     line-height:30px;
     border:none;
+    outline:none;
 }
 .signup span{
     line-height:40px;}
