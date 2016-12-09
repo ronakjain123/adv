@@ -1,9 +1,9 @@
 <!--submit Ad Page-->
 
-<div class="signup">
+<div class="signup" ng-controller="submitAdController">
     <div class="signup-box">
         <form>
-        <label>Title*</label><input type="text" name="title" value="" ><div class="clear"></div>
+        <label>Title*</label><input type="text" name="title" ng-model="user.title"><div class="clear"></div>
         <label>Name*</label><input type="text" name="name" value="" ><div class="clear"></div>
         <label>Category*</label>
         <select name="category">
