@@ -11,11 +11,12 @@
             <div class="header-box">
                 <a href="/#/home"><img src="images/logo.png" alt=""></a>
                 <span class="login">
-                <a href="/#/home" class="button">Home</a>
-                <a href="/#/submitAd" class="button">Submit Ad</a>
-                <a href="/#/editAd" class="button" ng-hide="true">Edit Ad</a>
-                    <a href="/#/login">Login</a>
-                    <a href="/#/signup"> | Sign Up</a>
+                <a href="/#/home" class="button" ng-if="userdata.userId">Home</a>
+                <a href="/#/submitAd" class="button" ng-if="userdata.userId">Submit Ad</a>
+                <a href="/#/editAd" class="button" ng-if="userdata.userId" ng-hide="true">Edit Ad</a>
+                <a href="/#/login" ng-if="!userdata.userId">Login</a>
+                <a href="/#/logout" ng-if="userdata.userId" ng-click="logout()">Logout</a>
+                <a href="/#/signup" ng-if="!userdata.userId"> | Sign Up</a>
                 </span>
             </div><!--End of header-box-->
         </header><!--End of header-->

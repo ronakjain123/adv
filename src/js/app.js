@@ -5,25 +5,25 @@ var advApp =  angular.module("advApp",['ngRoute']);
 
 advApp.config(['$routeProvider', function($routeProvider){
     $routeProvider.
-    when("/home",{
+    when("/home/",{
         templateUrl: '../html/partials/product.html',
     }).
-    when("/login",{
+    when("/login/",{
         templateUrl: '../html/partials/login.html',
     }).
-    when("/signup",{
+    when("/signup/",{
         templateUrl: '../html/partials/signup.html',
     }).
-    when("/productDesc",{
+    when("/productDesc/",{
         templateUrl: '../html/partials/singleProduct.html',
     }).
-    when("/submitAd",{
+    when("/submitAd/",{
         templateUrl: '../html/partials/submitAd.html',
     }).
-    when("/editAd",{
+    when("/editAd/",{
         templateUrl: '../html/partials/editAd.html',
     }).
     otherwise({
-        redirectTo: '/home'
+        redirectTo: '/login/'
     });
 }]);
