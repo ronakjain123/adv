@@ -3,11 +3,9 @@
  */
 var app = angular.module('advApp')
 
-app.controller('productController', ['$scope', function($scope) {
-    $scope.productDesc = function() {
+app.controller('productController', ['$rootScope', '$scope', '$location', function($rootScope, $scope, $location) {
+    // $scope.productDesc = function() {}
+    $scope.singleProductfn = function(id){
+    	$location.path('/productDesc/id='+id);
     }
-/*
-    $scope.itemClicked = function(id){
-        console.log('data clicked = ', id);
-    }*/
 }]);

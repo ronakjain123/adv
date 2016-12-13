@@ -1,9 +1,11 @@
 <!--signuppage-->
 <div class="signup">
     <div class="signup-box">
-        <span>User Name </span><input type="text" name="username" value="Username"><div class="clear"></div>
-        <span>Email </span><input type="email" name="email" value="Email"><div class="clear"></div>
-        <span>Password </span><input type="password" name="password" value="Password"><div class="clear"></div>
+        <span>First Name </span><input type="text" name="firstName" ng-model="user.firstName"><div class="clear"></div>
+        <span>Last Name </span><input type="text" name="lastName" ng-model="user.lastName"><div class="clear"></div>
+        <span>UserName </span><input type="text" name="username" ng-model="user.userName"><div class="clear"></div>
+        <span>Email </span><input type="email" name="email"  ng-model="user.email"><div class="clear"></div>
+        <span>Password </span><input type="password" name="password"  ng-model="user.password"><div class="clear"></div>
         <span>Confirm Password </span><input type="password" name="password" value="Password"><div class="clear"></div>
         <button type="submit" value="SignUp" name="signup" ng-click="signUp();">Sign Up</button>
         <button type="button" value="Cancel" name="cancel">Cancel</button></div>

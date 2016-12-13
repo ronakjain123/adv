@@ -5,13 +5,10 @@ var app = angular.module('advApp')
 
 app.service('signupService', ['$http', function($http) {
     this.signup = function() {
-        console.log('Calling Service12');
         $http.post({url: 'http://10.20.14.83:9000/register', method: 'JSONP'}).then({
             'success': function() {
-                console.log('Success12..........');
             },
             'failure': function() {
-                console.log('Failed12..........');
             }
         })
     }

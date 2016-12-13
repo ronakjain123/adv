@@ -3,20 +3,23 @@
 <div class="signup" ng-controller="submitAdController">
     <div class="signup-box">
         <form>
-        <label>Title*</label><input type="text" name="title" ng-model="user.title"><div class="clear"></div>
-        <label>Name*</label><input type="text" name="name" value="" ><div class="clear"></div>
+        <label>Title*</label><input type="text" name="title" ng-model="post.title"><div class="clear"></div>
+        <label>Price*</label><input type="text" name="price" ng-model="post.price" ><div class="clear"></div>
+        <label>Name*</label><input type="text" name="name" ng-model="post.name" ><div class="clear"></div>
         <label>Category*</label>
-        <select name="category">
-            <option value="furniture">Furniture</option>
-            <option value="cars" selected>Cars</option>
-            <option value="mobile">Mobile</option>
+        <select name="category" ng-model="post.category">
+            <option value="Furniture">Furniture</option>
+            <option value="Cloths" selected>Cloths</option>
+            <option value="Mobile">Mobile</option>
         </select>
 
         <div class="clear"></div>
-        <label>Description</label><textarea rows="5" cols="20"></textarea><div class="clear"></div>
-        <label>Photos</label><input type="file" name="image"> <div class="clear"></div>
+        <label>Description</label><textarea rows="5" cols="20" ng-model="post.description"></textarea><div class="clear"></div>
+        <label>Photos</label><input type="file" name="image" ng-model="post.photo1"> <div class="clear"></div>
+        
         <button type="submit" value="submit" name="submit" ng-click="submitAd();">Submit</button>
         <button type="button" value="Cancel" name="cancel">Cancel</button>
+        
         </form>
     </div>
 </div><!--End of signup-->

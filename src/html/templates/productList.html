@@ -2,13 +2,13 @@
   <div class="image"><img src="images/desktop.jpg" alt="" style="width:100px; height: 100px;"></div><!--end of image-->
         <div class="content">
             <div class="top">
-                <a href="#/productDesc" class="heading">{{product.name}}</a>
+                <p  ng-click="singleProductfn(product.id);" class="heading">{{product.title}}</p>
                 <span class="price">{{product.price}}</span>
             </div>
             <div class="clear"></div>
             <div class="bottom">
                 <span class="date">Posted Date: {{product.date}}</span>
-                <span class="by">Posted By: {{product.by}}</span>
+                <span class="by">Posted By: {{product.name}}</span>
             </div>
         </div><!--end of content-->
 </div><!--End of product-->
