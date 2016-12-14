@@ -10,7 +10,6 @@ angular.module("advApp")
             scope : "=",
             templateUrl: '../../html/templates/productList.html',
             link: function (scope, ele, attrs) {
-
                 $http({
                 method: 'GET',
                 url: 'http://10.20.14.83:9000/posts',

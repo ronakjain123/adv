@@ -8,18 +8,17 @@ app.controller('submitAdController', ['$rootScope', '$scope', 'submitAdService',
     $scope.submitAd = function() {
         var res = submitAdService.submitAd($scope.post);
         res.success(function (data, status, headers, config) {
-            
+        // console.log('itemList', $rootScope.userdata.itemList);
                 if(data.data.userId) {
-                    $location.path('/home');
-                    $rootScope.userdata = data.data;
-
+                    $rootScope.userdata.itemList = data.data;
+                    $location.path('/home/');
                 }else {
-                    $location.path('/login');
                     $rootScope.userdata = [];
+                    $location.path('/login/');
                 }
             })
             .error(function (data, status, header, config) {
-	           	$location.path('/login');
+	           	$location.path('/login/');
             });
     };
 }]);
