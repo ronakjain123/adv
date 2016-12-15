@@ -3,10 +3,8 @@
   <div class="image"><img src="images/desktop.jpg" alt="" style="width:100px; height: 100px;"></div><!--end of image-->
         <div class="content">
             <div class="top">
-            <a class="remove" ng-click="remove(product.id)">Remove</a><div class="clear"></div>
                 <p  ng-click="singleProductfn(product.id);" class="heading">{{product.title}}</p>
                 <span class="price">Price: {{product.price}}</span>
-
             </div>
             <div class="clear"></div>
             <div class="bottom">
@@ -14,5 +12,8 @@
                 <span class="by">Posted By: {{product.userId}}</span>
                 <span class="by">Status: {{product.status}}</span>
             </div>
+
         </div><!--end of content-->
+        <a class="remove" ng-click="remove(product.id)">Remove</a>
+        <!-- <a class="edit" ng-click="edit(product.id)">Edit</a><div class="clear"></div> -->
 </div><!--End of product-->

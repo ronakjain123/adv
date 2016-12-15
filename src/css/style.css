@@ -14,6 +14,8 @@ html, body{
     float: left;
 }
 .remove{float: right; color: red; font-size: 12px; cursor: pointer;}
+.edit{float: right; color: #00a970; font-size: 12px; cursor: pointer; margin-right: 15px;}
+.edit: hover{ color: #000; text-decoration: underline;}
 h4{ margin: 0 auto; margin-top: 20px; width: 70%;}
 .name{color: #fff;}
 .container{
@@ -90,6 +92,7 @@ footer{
     width: 85%;
     float: right;
     padding:0;
+    height: 80px;
 }
 .product .content .top{
     width:99%;
@@ -146,6 +149,8 @@ footer{
 }
 .prod .desc .heading{margin-top:10px;
     line-height:30px;}
+    .prod .desc .heading-title{margin-top:10px;
+    line-height:30px; color: darkblue; font-weight: bold;}
 .prod .desc .price{
     margin-top:10px;line-height:30px;}
 .prod .desc .date{margin-top:10px;line-height:30px;}

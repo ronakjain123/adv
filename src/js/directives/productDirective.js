@@ -5,6 +5,7 @@
 angular.module("advApp")
     .directive('productList', ['$rootScope', '$http', function ($rootScope, $http) {
         
+        //for rendering all products
         return {
             restrict: 'E',
             scope : "=",
